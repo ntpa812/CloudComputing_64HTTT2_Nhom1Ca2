@@ -61,17 +61,36 @@
         }
 
         .card-custom {
+            width: 150; 
+            height: 150px;
             background: #3498db;
             color: white;
-            text-align: center;
-            padding: 30px;
-            border-radius: 10px;
-            font-size: 18px;
-            font-weight: bold;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 150px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .card-custom i {
+            font-size: 40px; /* Kích thước icon */
+            margin-bottom: 10px; /* Khoảng cách giữa icon và chữ */
+        }
+
+        .card-custom span {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .card-custom:hover {
+            transform: scale(1.05);
+        }
+
         }
     </style>
 </head>
@@ -98,44 +117,70 @@
         <a href="#">Khen thưởng</a>
     </div>
 
-    
-
     <div class="content">
         <div class="container">
             <div class="row g-3">
                 <div class="col-md-4">
-                    <div class="card-custom">Thông tin sinh viên</div>
+                    <div class="card-custom">
+                        <i class="fas fa-book-open"></i> <!-- Icon đăng ký học -->
+                        <span>Đăng ký học</span>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card-custom">Đăng ký học</div>
+                    <div class="card-custom">
+                        <i class="fas fa-file-alt"></i> <!-- Icon kết quả đăng ký học -->
+                        <span>Kết quả đăng ký học</span>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card-custom">Kết quả đăng ký học</div>
+                    <div class="card-custom">
+                        <i class="fas fa-chart-line"></i> <!-- Icon tra cứu điểm -->
+                        <span>Tra cứu điểm</span>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card-custom">Tra cứu điểm</div>
+                    <div class="card-custom">
+                        <i class="fas fa-graduation-cap"></i> <!-- Icon học vụ -->
+                        <span>Rèn luyện, học vụ, tốt nghiệp</span>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card-custom">Rèn luyện, học vụ, tốt nghiệp</div>
+                    <div class="card-custom">
+                        <i class="fas fa-dollar-sign"></i> <!-- Icon học phí -->
+                        <span>Tra cứu học phí</span>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card-custom">Tra cứu học phí</div>
+                    <div class="card-custom">
+                        <i class="fas fa-university"></i> <!-- Icon đào tạo -->
+                        <span>Chương trình đào tạo</span>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card-custom">Chương trình đào tạo</div>
+                    <div class="card-custom">
+                        <i class="fas fa-calendar-alt"></i> <!-- Icon lịch thi -->
+                        <span>Xem lịch thi</span>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card-custom">Xem lịch thi</div>
+                    <div class="card-custom">
+                        <i class="fas fa-trophy"></i> <!-- Icon khen thưởng -->
+                        <span>Khen thưởng</span>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card-custom">Khen thưởng</div>
+                    <div class="card-custom">
+                        <i class="fas fa-exclamation-circle"></i> <!-- Icon kỷ luật -->
+                        <span>Kỷ luật</span>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card-custom">Kỷ luật</div>
+                    <div class="card-custom">
+                        <i class="fas fa-flask"></i> <!-- Icon nghiên cứu khoa học -->
+                        <span>Nghiên cứu khoa học</span>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card-custom">Nghiên cứu khoa học</div>
-                </div>
+
             </div>
         </div>
     </div>
