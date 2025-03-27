@@ -12,6 +12,28 @@
             background-color: #f0f2f5;
         }
 
+        .header {
+            background-color: #34495e;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            height: 40px;
+        }
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
         .sidebar {
             width: 250px;
             height: 100vh;
@@ -30,7 +52,7 @@
 
         .sidebar a:hover,
         .sidebar .active {
-            background-color: #1abc9c;
+            background-color: #3498db;
         }
 
         .content {
@@ -49,6 +71,7 @@
 </head>
 
 <body>
+    
     <div class="sidebar">
         <h4 class="text-center">Dashboard</h4>
         <a href="#" class="active">Trang chủ</a>
@@ -60,6 +83,15 @@
         <a href="#">Xem lịch thi</a>
         <a href="#">Khen thưởng</a>
     </div>
+
+    <div class="header">
+        <img src="logo.png" alt="Logo Trường">
+        <div class="user-info">
+            <img src="assets/images/no-profile-photo-small.png" alt="User Avatar">
+            <span>Nguyễn Thị Phương Anh</span>
+        </div>
+    </div>
+
     <div class="content">
         <div class="container">
             <div class="row g-3">
