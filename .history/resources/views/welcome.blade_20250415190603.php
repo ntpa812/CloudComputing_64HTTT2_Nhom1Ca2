@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+    body {
+        background-color: #f0f2f5;
+    }
+
+    .header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header img {
+        height: 40px;
+    }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .user-info img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        background-color: #2c3e50;
+        color: white;
+        position: fixed;
+        padding-top: 20px;
+    }
+
+    .sidebar a {
+        display: block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .sidebar a:hover,
+    .sidebar .active {
+        background-color: #3498db;
+    }
+
+    .content {
+        margin-left: 260px;
+        padding: 20px;
+    }
+
+    .card-custom {
+        width: 150;
+        height: 150px;
+        background: #3498db;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .card-custom i {
+        font-size: 40px;
+        /* Kích thước icon */
+        margin-bottom: 10px;
+        /* Khoảng cách giữa icon và chữ */
+    }
+
+    .card-custom span {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .card-custom:hover {
+        transform: scale(1.05);
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="assets/images/logo-small.png" alt="Logo Trường">
+        <div class="user-info">
+            <img src="assets/images/no-profile-photo-small.png" alt="User Avatar">
+            <span>Nguyễn Thị Phương Anh</span>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h4 class="text-center">Dashboard</h4>
+        <a href="#" class="active">Trang chủ</a>
+        <a href="#">Đăng ký học</a>
+        <a href="#">Kết quả đăng ký</a>
+        <a href="#">Tra cứu điểm</a>
+        <a href="#">Học phí</a>
+        <a href="#">Chương trình đào tạo</a>
+        <a href="#">Xem lịch thi</a>
+        <a href="#">Khen thưởng</a>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <i class="fas fa-book-open"></i> <!-- Icon đăng ký học -->
+                        <span>Đăng ký học</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <i class="fas fa-file-alt"></i> <!-- Icon kết quả đăng ký học -->
+                        <span>Kết quả đăng ký học</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <i class="fas fa-chart-line"></i> <!-- Icon tra cứu điểm -->
+                        <span>Tra cứu điểm</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <i class="fas fa-graduation-cap"></i> <!-- Icon học vụ -->
+                        <span>Rèn luyện, học vụ, tốt nghiệp</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <i class="fas fa-dollar-sign"></i> <!-- Icon học phí -->
+                        <span>Tra cứu học phí</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <i class="fas fa-university"></i> <!-- Icon đào tạo -->
+                        <span>Chương trình đào tạo</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <i class="fas fa-calendar-alt"></i> <!-- Icon lịch thi -->
+                        <span>Xem lịch thi</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <i class="fas fa-trophy"></i> <!-- Icon khen thưởng -->
+                        <span>Khen thưởng</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <i class="fas fa-exclamation-circle"></i> <!-- Icon kỷ luật -->
+                        <span>Kỷ luật</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <i class="fas fa-flask"></i> <!-- Icon nghiên cứu khoa học -->
+                        <span>Nghiên cứu khoa học</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
