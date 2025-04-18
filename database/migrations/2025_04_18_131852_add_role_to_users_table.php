@@ -9,23 +9,21 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
-        Schema::create('courses', function (Blueprint $table) {
-        $table->id();
-        $table->string('course_code');
-        $table->string('course_name');
-        $table->integer('credits');
-        $table->timestamps();
-    });
-
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('role')->default('sinhvien'); // hoặc 'admin'
+        });
     }
+
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('courses');
+        Schema::table('users', function (Blueprint $table) {
+            //
+        });
     }
 };
