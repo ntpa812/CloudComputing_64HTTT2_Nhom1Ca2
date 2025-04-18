@@ -96,8 +96,8 @@
         /* NEW */
         align-items: center;
         /* NEW */
-        width: 100%;
-        height: 100%
+        width: max-content;
+
     }
 
     .footer a {
