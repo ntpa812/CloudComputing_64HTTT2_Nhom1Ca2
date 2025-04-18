@@ -70,6 +70,7 @@
     <div class="login-container">
         <h2>Đăng nhập hệ thống</h2>
         <form action="{{ route('login') }}" method="POST">
+            @csrf
             <input type="email" name="email" placeholder="Email sinh viên" required>
             <input type="password" name="password" placeholder="Mật khẩu" required>
             <button type="submit">Đăng nhập</button>
