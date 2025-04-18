@@ -23,7 +23,7 @@
         padding: 20px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         /* NEW */
         padding: 20px;
         width: 100%;
@@ -88,7 +88,7 @@
         background-color: black;
         color: white;
         text-align: center;
-        padding: 20px;
+        padding: 200px;
         font-size: 16px;
         display: flex;
         /* NEW */
