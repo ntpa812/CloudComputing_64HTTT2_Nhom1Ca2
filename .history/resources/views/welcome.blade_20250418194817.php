@@ -90,12 +90,6 @@
         text-align: center;
         padding: 20px;
         font-size: 16px;
-        display: flex;
-        /* NEW */
-        flex-direction: column;
-        /* NEW */
-        align-items: center;
-        /* NEW */
     }
 
     .footer a {

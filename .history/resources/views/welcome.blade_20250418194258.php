@@ -11,22 +11,12 @@
         font-family: 'Segoe UI', sans-serif;
         background: linear-gradient(to right, #c0e8f9, #9fdcf3);
         color: #000;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
-
 
     .header {
         display: flex;
         align-items: center;
         padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* NEW */
-        padding: 20px;
-        width: 100%;
     }
 
     .logo {
@@ -43,16 +33,6 @@
         justify-content: space-between;
         padding: 40px;
         flex-wrap: wrap;
-        display: flex;
-        justify-content: center;
-        /* changed */
-        align-items: center;
-        /* NEW */
-        padding: 40px;
-        flex-wrap: wrap;
-        gap: 40px;
-        /* NEW: tạo khoảng cách đều đẹp hơn */
-        text-align: left;
     }
 
     .main img {
@@ -64,11 +44,6 @@
         max-width: 600px;
         font-size: 18px;
         line-height: 1.6;
-        max-width: 600px;
-        font-size: 18px;
-        line-height: 1.6;
-        padding: 10px;
-        /* NEW */
     }
 
     .login-button {
@@ -90,12 +65,6 @@
         text-align: center;
         padding: 20px;
         font-size: 16px;
-        display: flex;
-        /* NEW */
-        flex-direction: column;
-        /* NEW */
-        align-items: center;
-        /* NEW */
     }
 
     .footer a {

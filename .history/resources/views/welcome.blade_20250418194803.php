@@ -64,11 +64,6 @@
         max-width: 600px;
         font-size: 18px;
         line-height: 1.6;
-        max-width: 600px;
-        font-size: 18px;
-        line-height: 1.6;
-        padding: 10px;
-        /* NEW */
     }
 
     .login-button {
@@ -90,12 +85,6 @@
         text-align: center;
         padding: 20px;
         font-size: 16px;
-        display: flex;
-        /* NEW */
-        flex-direction: column;
-        /* NEW */
-        align-items: center;
-        /* NEW */
     }
 
     .footer a {
