@@ -1,33 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\Course;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Course; // Giả sử bạn có một model Course tương ứng với bảng courses trong Cloud SQL.
 
 class CourseController extends Controller
 {
-    public function index()
+    public function getCourses()
     {
-        $courses = Course::all();
-        return view('courses.index', compact('courses'));
-    }
-
-    public function register(Request $request)
-    {
-        $request->validate([
-            'course_id' => 'required|exists:courses,id',
-        ]);
-
-        $user = auth()->user(); // hoặc User::find(1); nếu chưa có auth
-
-        // Tránh đăng ký trùng
-        if ($user->courses()->where('course_id', $request->course_id)->exists()) {
-            return back()->with('error', 'Bạn đã đăng ký học phần này!');
-        }
-
-        $user->courses()->attach($request->course_id);
-
-        return back()->with('success', 'Đăng ký thành công!');
+        $courses = Course::all();  // Lấy tất cả các khóa học từ Cloud SQL
+        return response()->json($courses);  // Trả về dữ liệu dưới dạng JSON
     }
 }
