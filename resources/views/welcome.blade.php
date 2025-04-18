@@ -27,6 +27,7 @@
         /* NEW */
         padding: 20px;
         width: 100%;
+        margin-left: 100px;
     }
 
     .logo {
@@ -53,6 +54,7 @@
         gap: 40px;
         /* NEW: tạo khoảng cách đều đẹp hơn */
         text-align: left;
+        margin: 100px;
     }
 
     .main img {
@@ -88,7 +90,7 @@
         background-color: black;
         color: white;
         text-align: center;
-        padding: 200px;
+        padding: 100px;
         font-size: 16px;
         display: flex;
         /* NEW */
