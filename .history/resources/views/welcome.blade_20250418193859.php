@@ -92,7 +92,7 @@
 
 
     <div class="header">
-        <img src='http://nhom1ca2.me/assets/images/logo-small.png' alt="Logo" class="logo">
+        <img src='assets/images/logo-small.png' alt="Logo" class="logo">
         <div class="title-section">
             <h2>Đăng ký Học phần</h2>
             <p>Nhóm 1 Ca 2 - 64HTTT2 - Nhập môn Điện toán Đám mây</p>
@@ -100,7 +100,7 @@
     </div>
 
     <div class="main">
-        <img src='http://nhom1ca2.me/assets/images/Homepage+graphic.png' alt="Hình minh họa học phần">
+        <img src='assets/images/Homepage+graphic.png' alt="Hình minh họa học phần">
         <div class="content">
             <p>Hệ thống của chúng tôi được thiết kế để giúp bạn dễ dàng và nhanh chóng đăng ký các học phần trong mỗi kỳ
                 học. Với giao diện thân thiện và dễ sử dụng, bạn có thể dễ dàng duyệt qua danh sách các khóa học, kiểm

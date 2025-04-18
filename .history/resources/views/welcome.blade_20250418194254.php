@@ -92,7 +92,7 @@
 
 
     <div class="header">
-        <img src='http://nhom1ca2.me/assets/images/logo-small.png' alt="Logo" class="logo">
+        <img src='assets/images/logo-small.png' alt="Logo" class="logo">
         <div class="title-section">
             <h2>Đăng ký Học phần</h2>
             <p>Nhóm 1 Ca 2 - 64HTTT2 - Nhập môn Điện toán Đám mây</p>
