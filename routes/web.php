@@ -16,16 +16,16 @@ Route::post('/login', function (Request $request) {
     $email = $request->input('email');
     $password = $request->input('password');
     
-    // Giả sử bạn kiểm tra email và mật khẩu với Zoho Creator hoặc một hệ thống khác
-    $userType = checkUserCredentials($email, $password); // Thực hiện kiểm tra đăng nhập tại đây
+    // // Giả sử bạn kiểm tra email và mật khẩu với Zoho Creator hoặc một hệ thống khác
+    // $userType = checkUserCredentials($email, $password); // Thực hiện kiểm tra đăng nhập tại đây
 
-    if ($userType == 'student') {
-        return redirect('/sinhvien'); // Truy cập vào trang sinh viên (WordPress)
-    } elseif ($userType == 'admin') {
-        return redirect('/admin'); // Truy cập vào trang quản trị viên (Zoho Creator)
-    } else {
-        return redirect()->back()->withErrors(['msg' => 'Sai thông tin đăng nhập']);
-    }
+    // if ($userType == 'student') {
+    //     return redirect('/sinhvien'); // Truy cập vào trang sinh viên (WordPress)
+    // } elseif ($userType == 'admin') {
+    //     return redirect('/admin'); // Truy cập vào trang quản trị viên (Zoho Creator)
+    // } else {
+    //     return redirect()->back()->withErrors(['msg' => 'Sai thông tin đăng nhập']);
+    // }
 })->name('login');
 
 // Route cho sinh viên, chuyển hướng tới trang sinh viên của WordPress
