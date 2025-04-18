@@ -11,14 +11,15 @@
     <h1>Đăng nhập vào hệ thống</h1>
     <form method="POST" action="{{ route('login') }}">
         @csrf
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
 
-        <label for="password">Mật khẩu:</label>
-        <input type="password" id="password" name="password" required><br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
 
-        <button type="submit">Đăng nhập</button>
+        <button type="submit">Login</button>
     </form>
+
 </body>
 
 </html>
