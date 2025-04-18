@@ -13,6 +13,7 @@ Route::get('/', function () {
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
+
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Route cho sinh viên, chuyển hướng tới trang sinh viên của WordPress
