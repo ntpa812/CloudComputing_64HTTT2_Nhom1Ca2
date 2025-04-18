@@ -21,7 +21,7 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 // });
 
 Route::get('/sinhvien', function () {
-    return redirect()->away('http://34.46.15.163/?page_id=17');
+    return redirect()->away('http://34.46.15.163/?page_id=9090');
 });
 
 

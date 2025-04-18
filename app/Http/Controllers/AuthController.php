@@ -32,7 +32,7 @@ class AuthController extends Controller
 
         if (isset($students[$email]) && $students[$email] === $password) {
             session(['user_type' => 'student', 'email' => $email]);
-            return redirect()->away('http://34.46.15.163/?page_id=17'); // trang WordPress
+            return redirect()->away('http://34.46.15.163/?page_id=90'); // trang WordPress
         }
 
         if (isset($admin[$email]) && $admin[$email] === $password) {
