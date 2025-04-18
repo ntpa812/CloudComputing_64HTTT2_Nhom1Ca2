@@ -88,12 +88,10 @@
 
 <body>
 
-    <a href="/login" class="login-button">Đăng nhập</a>
-
+    <button class="login-button">Đăng nhập</button>
 
     <div class="header">
-        <img src='https://github.com/ntpa812/CloudComputing_64HTTT2_Nhom1Ca2/blob/0ce9bcc2eb9608037bc56e8a627100b0a67c707c/public/assets/images/logo-small.png'
-            alt="Logo" class="logo">
+        <img src='public/assets/images/logo-small.png' alt="Logo" class="logo">
         <div class="title-section">
             <h2>Đăng ký Học phần</h2>
             <p>Nhóm 1 Ca 2 - 64HTTT2 - Nhập môn Điện toán Đám mây</p>

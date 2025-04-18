@@ -88,8 +88,7 @@
 
 <body>
 
-    <a href="/login" class="login-button">Đăng nhập</a>
-
+    <button class="login-button">Đăng nhập</button>
 
     <div class="header">
         <img src='https://github.com/ntpa812/CloudComputing_64HTTT2_Nhom1Ca2/blob/0ce9bcc2eb9608037bc56e8a627100b0a67c707c/public/assets/images/logo-small.png'
