@@ -2,8 +2,6 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CourseController;
-    
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,11 +18,3 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
-
-Route::get('/home', [App\Http\Controllers\CourseController::class, 'index'])->middleware('auth');
-
-
-Route::post('/register-course', [CourseController::class, 'registerCourse'])->name('courses.register');
-
-Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
-Route::post('/courses/register', [CourseController::class, 'register'])->name('courses.register');
