@@ -179,7 +179,7 @@ df-messenger {
     --df-messenger-message-user-background: #d3e3fd;
     --df-messenger-message-bot-background: #fff;
     bottom: 16px;
-    right: 16px;
+    left: 16px;
 }
 </style>
 
