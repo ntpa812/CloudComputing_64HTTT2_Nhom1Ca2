@@ -183,4 +183,13 @@ df-messenger {
 }
 </style>
 
+<script>
+window.$zoho = window.$zoho || {};
+$zoho.salesiq = $zoho.salesiq || {
+    ready: function() {}
+}
+</script>
+<script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq7ed2637505a3cb23bd1ad16e7b623aef" defer>
+</script>
+
 </html>
