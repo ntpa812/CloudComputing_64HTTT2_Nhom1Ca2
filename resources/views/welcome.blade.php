@@ -180,7 +180,7 @@ df-messenger {
     --df-messenger-message-bot-background: #fff;
     bottom: 16px;
     right: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 </style>
 
