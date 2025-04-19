@@ -21,12 +21,12 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 // });
 
 Route::get('/sinhvien', function () {
-    return redirect()->away('http://34.46.15.163/?page_id=9090');
+    return redirect()->away('http://34.46.15.163/?page_id=90');
 });
 
 
 // Route cho admin, chuyển hướng tới trang quản trị viên của Zoho Creator
 Route::get('/admin', function () {
     // Redirect tới trang Zoho Creator cho admin
-    return redirect('https://creator.zoho.com'); // Đổi theo URL Zoho Creator của bạn
+    return redirect('http://34.46.15.163/?page_id=96&preview=true'); // Đổi theo URL Zoho Creator của bạn
 });

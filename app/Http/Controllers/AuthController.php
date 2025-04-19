@@ -37,7 +37,7 @@ class AuthController extends Controller
 
         if (isset($admin[$email]) && $admin[$email] === $password) {
             session(['user_type' => 'admin', 'email' => $email]);
-            return redirect()->away('https://creator.zoho.com/...'); // link Zoho Creator
+            return redirect()->away('http://34.46.15.163/?page_id=96&preview=true'); // link Zoho Creator
         }
 
         return redirect()->back()->withErrors(['email' => 'Email hoặc mật khẩu không đúng.']);
